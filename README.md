@@ -1,5 +1,5 @@
 Current tasks:
-  - [ ] Pitch shift
+- [ ] Pitch shift
   - [ ] Read wav file
   - [ ] Perform stft
   - [ ] Identify Peaks
