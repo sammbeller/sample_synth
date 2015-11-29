@@ -3,8 +3,21 @@ Current tasks:
   - [ ] Read wav file
   - [ ] Perform stft
   - [ ] Identify Peaks
+    - [ ] Window size (might be depentdent on fundamental frequency detection)
+    - [ ] Frequency variability
+    - [ ] Duration threshold
+    - [ ] Min amplitude
+    - [ ] Parabolic interpolation
   - [ ] Identify fundamental fq
   - [ ] Stochastic analysis
   - [ ] Adjust harmonics to new fundamental
   - [ ] Synthesize
   - [ ] write wav
+
+- [ ] Variables
+  - [ ] DFT size
+  - [ ] Window type
+  - [ ] Frequency delta threshold
+  - [ ] Minimum amplitude threshold
+  - [ ] Minimum duration threshold
+  - [ ] Window size
