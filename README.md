@@ -1,4 +1,7 @@
 Current tasks:
+- [ ] Install script
+  - [ ] setup virtualenv
+  - [ ] Download sms-tools and add to python path
 - [ ] Pitch shift
   - [ ] Read wav file
   - [ ] Perform stft
