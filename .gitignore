@@ -1,1 +1,16 @@
 pip-selfcheck.json
+*.swp
+#virtualenv files
+bin/activate*
+bin/easy_install*
+bin/pip*
+bin/iptest*
+bin/wheel
+bin/f2py
+bin/python*
+bin/ipython*
+include
+lib
+share
+\.Python
+
