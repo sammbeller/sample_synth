@@ -9,6 +9,7 @@ bin/wheel
 bin/f2py
 bin/python*
 bin/ipython*
+src/*\.pyc
 lib
 include
 share
