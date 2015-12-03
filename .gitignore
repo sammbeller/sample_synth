@@ -9,8 +9,8 @@ bin/wheel
 bin/f2py
 bin/python*
 bin/ipython*
-include
 lib
+include
 share
 \.Python
 
