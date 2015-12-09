@@ -2,31 +2,27 @@ import numpy
 import scipy
 from numpy import fft
 
-def stft(x, fs, framesz, hop):
+def stft(x,framesz):
     """ Get the stft of a signal x
     x : array_like
         The signal
-    fs : int
-        The sampling rate of x
     framesz : int
         The window/fft length in samples
-    hop : int
-        The hop distance in samples
     """
-    framesamp = int(framesz*fs)
-    x = numpy.append(numpy.zeros(framesz), x)
+    hop = int(float(framesz)/2)
+    x = numpy.append(numpy.zeros(framesz), x) # Pad so we can reconstruct the whole signal
     x = numpy.append(x, numpy.zeros(framesz))
     w = scipy.hanning(framesz)
     X = scipy.array([scipy.fft(w*x[i:i+framesz]) 
-                     for i in range(0, len(x)-framesz, hop)])
+                     for i in range(hop, len(x)-(framesz), hop)])
     return X
 
-def istft(X, fs, T, hop):
+def istft(X, N):
     """ Transform an array of spectra to the original signal
     """
-    x = scipy.zeros(T*fs)
-    framesamp = X.shape[1]
-    hopsamp = int(hop*fs)
-    for n,i in enumerate(range(0, len(x)-framesamp, hopsamp)):
-        x[i:i+framesamp] += scipy.real(scipy.ifft(X[n]))
-    return x
+    framesz = X.shape[1]
+    hop = int(float(framesz)/2)
+    x = scipy.zeros(N + (2*framesz))
+    for n,i in enumerate(range(hop, len(x)-(framesz+hop), hop)):
+        x[i:i+framesz] += scipy.real(scipy.ifft(X[n]))
+    return x[framesz:-framesz]
