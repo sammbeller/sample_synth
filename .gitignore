@@ -11,7 +11,9 @@ bin/f2py
 bin/python*
 bin/ipython*
 src/*\.pyc
-lib
+bin/cygdb
+bin/cython
+bin/cythonizelib
 include
 share
 \.Python
