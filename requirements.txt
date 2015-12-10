@@ -1,5 +1,6 @@
 appnope==0.1.0
 Cython==0.23.4
+ddt==1.0.1
 decorator==4.0.4
 gnureadline==6.3.3
 ipython==4.0.1
