@@ -6,12 +6,24 @@ Current tasks:
 - [x] STFT
   - [ ] Improve error
     - [ ] Different window type?
+      - [ ] Hamming windows and related are POA at 50%
     - [ ] No windowing?
   - [ ] More Tests?
-    - [ ] Peak consistency
+    - [X] Peak consistency
+    - [ ] Add new parameters
+  - [ ] Infer length of synthesized sound from spectrum
 
 - [ ] Harmonic Analysis
-  - [ ] Use side-lobe height to determine min-amplitude threshhold
+  - [ ] Parabolic Interpolation
+  - [ ] Variables
+    - [ ] Minimum amplitude threshold (based on sidelobe level, paramterized for now)
+    - [ ] Minimum duration threshold
+    - [ ] Maximum number of tracks?
+  - [ ] Tests
+    - [ ] Parabolic Interpolation
+    - [ ] Shape
+    - [ ] Accuracy (number of tracks??)
+    - [ ] Fundamental??
 
 - [ ] Stochastic Analysis
 
