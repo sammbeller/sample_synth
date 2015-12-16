@@ -8,12 +8,15 @@ Current tasks:
     - [ ] Different window type?
       - [ ] Hamming windows and related are POA at 50%
     - [ ] No windowing?
+    - [ ] Need to add another frame
   - [ ] More Tests?
     - [X] Peak consistency
     - [ ] Add new parameters
   - [ ] Infer length of synthesized sound from spectrum
 
 - [ ] Harmonic Analysis
+  - [X] Peak Detection
+    - [ ] Test # of peaks, need to craft test cases carefully
   - [ ] Parabolic Interpolation
   - [ ] Variables
     - [ ] Minimum amplitude threshold (based on sidelobe level, paramterized for now)
