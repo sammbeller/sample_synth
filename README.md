@@ -15,11 +15,17 @@ Current tasks:
   - [ ] Infer length of synthesized sound from spectrum
 
 - [ ] Harmonic Analysis
+  - [ ] Need to normalize stft output before transformations
   - [X] Peak Detection
+    - [ ] Maximum number of peaks??
     - [ ] Test # of peaks, need to craft test cases carefully
   - [ ] Parabolic Interpolation
+    - [ ] How do we feel about the linear interpolation in phase spectrum?
   - [ ] Variables
     - [ ] Minimum amplitude threshold (based on sidelobe level, paramterized for now)
+      - [ ] -40dB looks alright for Hamming
+      - [ ] -30dB for Hann?
+      - [ ] Need a way to validate that we're eliminating the sidelobes, probably a test on a single waveform, ensuring that i get one(two) values out of this step
     - [ ] Minimum duration threshold
     - [ ] Maximum number of tracks?
   - [ ] Tests
