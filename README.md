@@ -15,7 +15,8 @@ Current tasks:
   - [ ] Infer length of synthesized sound from spectrum
 
 - [ ] Harmonic Analysis
-  - [ ] Need to normalize stft output before transformations
+  - [X] Need to normalize stft output before transformations
+    - Normalized by DFT length, then to decibals
   - [X] Peak Detection
     - [ ] Maximum number of peaks??
     - [ ] Test # of peaks, need to craft test cases carefully
