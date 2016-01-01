@@ -19,9 +19,7 @@ Current tasks:
     - Normalized by DFT length, then to decibals
   - [X] Peak Detection
     - [ ] Maximum number of peaks??
-    - [ ] Test # of peaks, need to craft test cases carefully
   - [ ] Parabolic Interpolation
-    - [ ] How do we feel about the linear interpolation in phase spectrum?
   - [ ] Variables
     - [ ] Minimum amplitude threshold (based on sidelobe level, paramterized for now)
       - [ ] -40dB looks alright for Hamming
